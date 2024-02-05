@@ -24,10 +24,14 @@ const {
     methods:{
         generate() {
             this.tenMail = [];
+            this.counter = 0
             for (let i = 0; i < 10; i++) {
               axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((email) => {
                   this.tenMail.push(email.data.response);
+                  if (this.tenMail.length === 10) {
+                    this.counter=10;
+                  }
                 })
             }
         }

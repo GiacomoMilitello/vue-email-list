@@ -16,3 +16,6 @@
 li{
     line-height: 250%;
 }
+.show {
+    display: list-item;
+  }
