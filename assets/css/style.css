@@ -14,6 +14,5 @@
     width: 100vw;
 }
 li{
-    width: calc(100% / 5);
     line-height: 250%;
 }
